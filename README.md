@@ -1,4 +1,4 @@
-# Lodra — hero island (drop-in)
+# Lodra — hero island (drop-in) 
 
 The cinematic scroll-scrub hero for the Lodra site. It's a self-contained "island": a pinned
 section that plays a pre-rendered frame sequence as you scroll (the Apple approach), with a
