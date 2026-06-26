@@ -19,7 +19,7 @@ export const HERO = {
     dir: "/frames/desktop",
     prefix: "frame_",
     ext: "webp",
-    count: 180,
+    count: 120,
     pad: 4,
     poster: "/frames/desktop/poster.webp",
   } as FrameSet,
@@ -43,7 +43,7 @@ export type Sequence = {
   destroy: () => void;
 };
 
-export function createSequence(set: FrameSet): Sequence {
+export function createSequence(set: FrameSet, onFrame?: () => void): Sequence {
   const frames: Array<CanvasImageSource | null> = new Array(set.count).fill(null);
   let cancelled = false;
 
@@ -64,7 +64,10 @@ export function createSequence(set: FrameSet): Sequence {
         typeof createImageBitmap === "function"
           ? await createImageBitmap(blob)
           : await blobToImage(blob);
-      if (!cancelled) frames[i] = bmp;
+      if (!cancelled) {
+        frames[i] = bmp;
+        onFrame?.();
+      }
     } catch {
       // leave null; nearest() fills the gap
     }
