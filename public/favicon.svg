@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lodra">
+  <rect width="64" height="64" rx="14" fill="#141312"/>
+  <!-- beam -->
+  <rect x="16" y="16" width="32" height="5" rx="1" fill="#EDE8E0"/>
+  <!-- plumb line -->
+  <line x1="32" y1="21" x2="32" y2="40" stroke="#8A847A" stroke-width="2"/>
+  <!-- plumb bob — Signal orange -->
+  <path d="M26 40 L38 40 Q40 40 40 42 L40 46.5 L32 56 L24 46.5 L24 42 Q24 40 26 40 Z" fill="#F2541B"/>
+</svg>
