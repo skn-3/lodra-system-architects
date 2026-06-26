@@ -13,6 +13,7 @@ export function useScrollReveal() {
     let rafId = 0;
     if (!reduce) {
       lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+      lenis.on("scroll", ScrollTrigger.update);
       const raf = (time: number) => {
         lenis!.raf(time);
         rafId = requestAnimationFrame(raf);
