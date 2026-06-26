@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { HeroScrub } from "@/components/lodra/HeroScrub";
+import { OpeningSequence } from "@/components/lodra/OpeningSequence";
 import { Header } from "@/components/lodra/Header";
-import { SystemsScene } from "@/components/lodra/SystemsScene";
 import { Problem } from "@/components/lodra/Problem";
 import { Method } from "@/components/lodra/Method";
 import { Cases } from "@/components/lodra/Cases";
@@ -27,8 +26,7 @@ function Index() {
   return (
     <main className="bg-graphite text-concrete min-h-screen overflow-x-clip">
       <Header />
-      <HeroScrub />
-      <SystemsScene />
+      <OpeningSequence />
       <Problem />
       <Method />
       <Cases />
