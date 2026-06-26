@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Hero } from "@/components/lodra/Hero";
+import { HeroScrub } from "@/components/lodra/HeroScrub";
 import { Problem } from "@/components/lodra/Problem";
 import { Method } from "@/components/lodra/Method";
 import { Cases } from "@/components/lodra/Cases";
@@ -24,7 +24,7 @@ function Index() {
   useScrollReveal();
   return (
     <main className="bg-graphite text-concrete min-h-screen overflow-x-hidden">
-      <Hero />
+      <HeroScrub />
       <Problem />
       <Method />
       <Cases />
